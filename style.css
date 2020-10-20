@@ -51,13 +51,39 @@ nav {
     background-size: cover;
     margin-top: 1em;
     height: 1000px;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-.hero__title {
-    text-align: center;
-    padding-top: 4em;
-    color: #fff;
+.services {
+    
+}
+
+.service {
+    height: 500px;
+    color: #ffffff;
     text-shadow: 2px 2px #111;
+    background: rgba(16, 41, 51, 0.75);
+    padding: 1.25em 1em 1em 1em;
+    border-radius: 15px 15px;
+}
+
+/*.service h3 {
+    text-decoration: underline;
+}*/
+
+@media (min-width: 930px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service + .service {
+        margin-left: 2em;
+    }
 }
 
 /* Footer */
