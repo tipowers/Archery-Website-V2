@@ -50,15 +50,35 @@ nav {
     background-image: url(./images/hero1.jpg);
     background-size: cover;
     margin-top: 1em;
-    height: 1000px;
+    height: 1100px;
+    position: relative;
     text-align: center;
     display: flex;
     align-items: center;
 }
 
-.services {
-    
+.hero__banner--header {
+    position: absolute;
+    display: flex;
+    align-self: flex-start;  
+    left: 50%;
+    margin-left: -265px;  
+    margin-top: 3em;    
 }
+
+.hero__banner--footer {
+    position: absolute;
+    display: flex;
+    align-self: flex-end;  
+    max-height: 200px;
+    left: 50%;
+    margin-left: -100px;
+    margin-bottom: 3em;
+}
+
+/*.services {
+    
+}*/
 
 .service {
     height: 500px;
@@ -67,6 +87,7 @@ nav {
     background: rgba(16, 41, 51, 0.75);
     padding: 1.25em 1em 1em 1em;
     border-radius: 15px 15px;
+    margin-top: -3em;
 }
 
 /*.service h3 {
