@@ -25,10 +25,15 @@ header {
 
 .logo img {
     height: 10vh;
+    margin-left: 2em;
 }
 
 nav {
-    flex: 1;
+    flex-grow: 1;
+}
+
+nav li {
+    margin: 0 -4em 0 -2em;
 }
 
 .nav__list {
@@ -41,7 +46,7 @@ nav {
 .nav__link {
     text-decoration: none;
     color: black;
-    font-size: large;
+    font-size: x-large
 }
 
 /* Hero / Main Content Section */
@@ -55,6 +60,7 @@ nav {
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .hero__banner--header {
@@ -62,7 +68,7 @@ nav {
     display: flex;
     align-self: flex-start;  
     left: 50%;
-    margin-left: -265px;  
+    margin-left: -275px;  
     margin-top: 3em;    
 }
 
@@ -76,33 +82,46 @@ nav {
     margin-bottom: 3em;
 }
 
-/*.services {
-    
-}*/
+.cards {
+    display: flex;
+    max-width: 90%;    
+}
 
-.service {
-    height: 500px;
+.card {
     color: #ffffff;
     text-shadow: 2px 2px #111;
     background: rgba(16, 41, 51, 0.75);
     padding: 1.25em 1em 1em 1em;
     border-radius: 15px 15px;
-    margin-top: -3em;
+    margin: -3em 1em 0em 1em; 
+    box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0);
+    transition: transform 200ms ease-in-out;
 }
 
-/*.service h3 {
-    text-decoration: underline;
-}*/
+.card h3 {
+    margin-top: 1em;
+    margin-bottom: 0em;
+    /*text-decoration: underline;*/
+}
 
-@media (min-width: 930px) {
-    .services {
+.card p {
+    line-height: 2.5em;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    opacity: .90;
+}
+
+@media (max-width: 930px) {
+    .cards {
         display: flex;
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .service + .service {
+    .card + .card {
         margin-left: 2em;
     }
 }
@@ -113,7 +132,7 @@ nav {
     background: #ffffff;
     text-align: center;
     padding: 2.5em 0;
-    font-size: large;
+    font-size: 1.3em;
 }
 
 .footer a {
