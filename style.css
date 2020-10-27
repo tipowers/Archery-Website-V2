@@ -88,6 +88,7 @@ nav li {
 }
 
 .card {
+    max-width: 350px;
     color: #ffffff;
     text-shadow: 2px 2px #111;
     background: rgba(16, 41, 51, 0.75);
@@ -99,12 +100,23 @@ nav li {
 }
 
 .card h3 {
+    font-size: 25px;
     margin-top: 1em;
     margin-bottom: 0em;
-    /*text-decoration: underline;*/
+}
+
+.card h3::after {
+    content: '';
+    display: block;
+    width: 5em;
+    height: 1.5px;
+    margin: 0.5em auto 0;
+    background: black;
+    opacity: .5;
 }
 
 .card p {
+    font-size: 19px;
     line-height: 2.5em;
 }
 
